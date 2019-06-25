@@ -13,6 +13,19 @@
 		DD09517F22C221F7003D388A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD09517D22C221F7003D388A /* Main.storyboard */; };
 		DD09518122C221F9003D388A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD09518022C221F9003D388A /* Assets.xcassets */; };
 		DD09518422C221F9003D388A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD09518222C221F9003D388A /* LaunchScreen.storyboard */; };
+		DDDF62E322C2288400DC4E28 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDF62E222C2288400DC4E28 /* Logger.swift */; };
+		DDDF62E722C2291000DC4E28 /* AvailabilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDF62E622C2291000DC4E28 /* AvailabilityView.swift */; };
+		DDDF62E822C2296000DC4E28 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDDF62DB22C2275B00DC4E28 /* SnapKit.framework */; };
+		DDDF62E922C2296000DC4E28 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDDF62DB22C2275B00DC4E28 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DDDF62ED22C2296F00DC4E28 /* BluetoothKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDDF62D022C2273200DC4E28 /* BluetoothKit.framework */; };
+		DDDF62EE22C2296F00DC4E28 /* BluetoothKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDDF62D022C2273200DC4E28 /* BluetoothKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DDDF62F322C22B4F00DC4E28 /* AvailabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDF62F222C22B4F00DC4E28 /* AvailabilityViewController.swift */; };
+		DDDF62F522C22BA900DC4E28 /* NSData+NumberOfBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDF62F422C22BA900DC4E28 /* NSData+NumberOfBytes.swift */; };
+		DDDF62F722C22BD500DC4E28 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDF62F622C22BD500DC4E28 /* UIImage+Color.swift */; };
+		DDDF62F922C22C4E00DC4E28 /* RoleSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDF62F822C22C4E00DC4E28 /* RoleSelectionViewController.swift */; };
+		DDDF62FB22C22CC900DC4E28 /* CentralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDF62FA22C22CC900DC4E28 /* CentralViewController.swift */; };
+		DDDF62FD22C22CF700DC4E28 /* PeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDF62FC22C22CF700DC4E28 /* PeripheralViewController.swift */; };
+		DDDF62FF22C22D4D00DC4E28 /* RemotePeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDF62FE22C22D4D00DC4E28 /* RemotePeripheralViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +64,36 @@
 			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
 			remoteInfo = "SnapKit Tests";
 		};
+		DDDF62EA22C2296000DC4E28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDDF62D522C2275B00DC4E28 /* SnapKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
+		DDDF62EF22C2296F00DC4E28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDDF62C922C2273200DC4E28 /* BluetoothKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C687E3971B8B496400B702D8;
+			remoteInfo = "BluetoothKit iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DDDF62EC22C2296100DC4E28 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DDDF62EE22C2296F00DC4E28 /* BluetoothKit.framework in Embed Frameworks */,
+				DDDF62E922C2296000DC4E28 /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DD09517422C221F7003D388A /* winkme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = winkme.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +106,15 @@
 		DD09518522C221F9003D388A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDDF62C922C2273200DC4E28 /* BluetoothKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BluetoothKit.xcodeproj; path = ../Vendor/BluetoothKit/BluetoothKit.xcodeproj; sourceTree = "<group>"; };
 		DDDF62D522C2275B00DC4E28 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = ../Vendor/SnapKit/SnapKit.xcodeproj; sourceTree = "<group>"; };
+		DDDF62E222C2288400DC4E28 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		DDDF62E622C2291000DC4E28 /* AvailabilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityView.swift; sourceTree = "<group>"; };
+		DDDF62F222C22B4F00DC4E28 /* AvailabilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityViewController.swift; sourceTree = "<group>"; };
+		DDDF62F422C22BA900DC4E28 /* NSData+NumberOfBytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSData+NumberOfBytes.swift"; sourceTree = "<group>"; };
+		DDDF62F622C22BD500DC4E28 /* UIImage+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
+		DDDF62F822C22C4E00DC4E28 /* RoleSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleSelectionViewController.swift; sourceTree = "<group>"; };
+		DDDF62FA22C22CC900DC4E28 /* CentralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralViewController.swift; sourceTree = "<group>"; };
+		DDDF62FC22C22CF700DC4E28 /* PeripheralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralViewController.swift; sourceTree = "<group>"; };
+		DDDF62FE22C22D4D00DC4E28 /* RemotePeripheralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePeripheralViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +122,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDDF62ED22C2296F00DC4E28 /* BluetoothKit.framework in Frameworks */,
+				DDDF62E822C2296000DC4E28 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,11 +198,60 @@
 		DDDF62DF22C227A100DC4E28 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				DDDF62F122C22B3C00DC4E28 /* Protocols */,
+				DDDF62E522C228F400DC4E28 /* Extensions */,
+				DDDF62E422C228C200DC4E28 /* Views */,
+				DDDF62E122C2285C00DC4E28 /* Utils */,
+				DDDF62E022C2284800DC4E28 /* Presents */,
 				DD09517722C221F7003D388A /* AppDelegate.swift */,
-				DD09517922C221F7003D388A /* FirstViewController.swift */,
-				DD09517B22C221F7003D388A /* SecondViewController.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		DDDF62E022C2284800DC4E28 /* Presents */ = {
+			isa = PBXGroup;
+			children = (
+				DD09517922C221F7003D388A /* FirstViewController.swift */,
+				DD09517B22C221F7003D388A /* SecondViewController.swift */,
+				DDDF62F822C22C4E00DC4E28 /* RoleSelectionViewController.swift */,
+				DDDF62FA22C22CC900DC4E28 /* CentralViewController.swift */,
+				DDDF62FC22C22CF700DC4E28 /* PeripheralViewController.swift */,
+				DDDF62FE22C22D4D00DC4E28 /* RemotePeripheralViewController.swift */,
+			);
+			path = Presents;
+			sourceTree = "<group>";
+		};
+		DDDF62E122C2285C00DC4E28 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DDDF62E222C2288400DC4E28 /* Logger.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DDDF62E422C228C200DC4E28 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DDDF62E622C2291000DC4E28 /* AvailabilityView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DDDF62E522C228F400DC4E28 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DDDF62F422C22BA900DC4E28 /* NSData+NumberOfBytes.swift */,
+				DDDF62F622C22BD500DC4E28 /* UIImage+Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DDDF62F122C22B3C00DC4E28 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DDDF62F222C22B4F00DC4E28 /* AvailabilityViewController.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,10 +264,13 @@
 				DD09517022C221F7003D388A /* Sources */,
 				DD09517122C221F7003D388A /* Frameworks */,
 				DD09517222C221F7003D388A /* Resources */,
+				DDDF62EC22C2296100DC4E28 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DDDF62EB22C2296000DC4E28 /* PBXTargetDependency */,
+				DDDF62F022C2296F00DC4E28 /* PBXTargetDependency */,
 			);
 			name = winkme;
 			productName = winkme;
@@ -271,13 +376,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDDF62F322C22B4F00DC4E28 /* AvailabilityViewController.swift in Sources */,
+				DDDF62F722C22BD500DC4E28 /* UIImage+Color.swift in Sources */,
+				DDDF62FF22C22D4D00DC4E28 /* RemotePeripheralViewController.swift in Sources */,
+				DDDF62F922C22C4E00DC4E28 /* RoleSelectionViewController.swift in Sources */,
+				DDDF62FD22C22CF700DC4E28 /* PeripheralViewController.swift in Sources */,
+				DDDF62F522C22BA900DC4E28 /* NSData+NumberOfBytes.swift in Sources */,
 				DD09517C22C221F7003D388A /* SecondViewController.swift in Sources */,
 				DD09517822C221F7003D388A /* AppDelegate.swift in Sources */,
+				DDDF62FB22C22CC900DC4E28 /* CentralViewController.swift in Sources */,
 				DD09517A22C221F7003D388A /* FirstViewController.swift in Sources */,
+				DDDF62E722C2291000DC4E28 /* AvailabilityView.swift in Sources */,
+				DDDF62E322C2288400DC4E28 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDDF62EB22C2296000DC4E28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			targetProxy = DDDF62EA22C2296000DC4E28 /* PBXContainerItemProxy */;
+		};
+		DDDF62F022C2296F00DC4E28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BluetoothKit iOS";
+			targetProxy = DDDF62EF22C2296F00DC4E28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DD09517D22C221F7003D388A /* Main.storyboard */ = {
@@ -418,10 +545,12 @@
 		DD09518922C221F9003D388A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M55Q5KHKLQ;
-				INFOPLIST_FILE = winkme/Info.plist;
+				INFOPLIST_FILE = winkme/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -436,10 +565,12 @@
 		DD09518A22C221F9003D388A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M55Q5KHKLQ;
-				INFOPLIST_FILE = winkme/Info.plist;
+				INFOPLIST_FILE = winkme/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

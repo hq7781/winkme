@@ -303,7 +303,7 @@
 					};
 					C687E3971B8B496400B702D8 = {
 						CreatedOnToolsVersion = 7.0;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 1010;
 					};
 					C6ED86C01BA955A600C9B70B = {
 						CreatedOnToolsVersion = 7.1;
