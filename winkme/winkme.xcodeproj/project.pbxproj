@@ -78,6 +78,13 @@
 			remoteGlobalIDString = C687E3971B8B496400B702D8;
 			remoteInfo = "BluetoothKit iOS";
 		};
+		DDDF630522C2357100DC4E28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDDF630122C2357100DC4E28 /* MacBLEScanner.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DDE8FCDA22BB64360007539B;
+			remoteInfo = MacBLEScanner;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -115,6 +122,7 @@
 		DDDF62FA22C22CC900DC4E28 /* CentralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralViewController.swift; sourceTree = "<group>"; };
 		DDDF62FC22C22CF700DC4E28 /* PeripheralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralViewController.swift; sourceTree = "<group>"; };
 		DDDF62FE22C22D4D00DC4E28 /* RemotePeripheralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePeripheralViewController.swift; sourceTree = "<group>"; };
+		DDDF630122C2357100DC4E28 /* MacBLEScanner.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MacBLEScanner.xcodeproj; path = ../MacBLEScanner/MacBLEScanner.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,7 @@
 		DD09516B22C221F7003D388A = {
 			isa = PBXGroup;
 			children = (
+				DDDF630022C2354700DC4E28 /* MacBLEScanner */,
 				DDDF62BB22C2258400DC4E28 /* Frameworks */,
 				DD09517622C221F7003D388A /* winkme */,
 				DD09517522C221F7003D388A /* Products */,
@@ -254,6 +263,22 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		DDDF630022C2354700DC4E28 /* MacBLEScanner */ = {
+			isa = PBXGroup;
+			children = (
+				DDDF630122C2357100DC4E28 /* MacBLEScanner.xcodeproj */,
+			);
+			name = MacBLEScanner;
+			sourceTree = "<group>";
+		};
+		DDDF630222C2357100DC4E28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDDF630622C2357100DC4E28 /* MacBLEScanner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -309,6 +334,10 @@
 					ProjectRef = DDDF62C922C2273200DC4E28 /* BluetoothKit.xcodeproj */;
 				},
 				{
+					ProductGroup = DDDF630222C2357100DC4E28 /* Products */;
+					ProjectRef = DDDF630122C2357100DC4E28 /* MacBLEScanner.xcodeproj */;
+				},
+				{
 					ProductGroup = DDDF62D622C2275B00DC4E28 /* Products */;
 					ProjectRef = DDDF62D522C2275B00DC4E28 /* SnapKit.xcodeproj */;
 				},
@@ -354,6 +383,13 @@
 			fileType = wrapper.cfbundle;
 			path = "SnapKit Tests.xctest";
 			remoteRef = DDDF62DC22C2275B00DC4E28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDDF630622C2357100DC4E28 /* MacBLEScanner.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MacBLEScanner.app;
+			remoteRef = DDDF630522C2357100DC4E28 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
