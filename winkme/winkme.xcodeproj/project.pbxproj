@@ -15,6 +15,44 @@
 		DD09518422C221F9003D388A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD09518222C221F9003D388A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DDDF62CF22C2273200DC4E28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDDF62C922C2273200DC4E28 /* BluetoothKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C687E3981B8B496400B702D8;
+			remoteInfo = "BluetoothKit iOS";
+		};
+		DDDF62D122C2273200DC4E28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDDF62C922C2273200DC4E28 /* BluetoothKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6ED86C11BA955A600C9B70B;
+			remoteInfo = "BluetoothKit OSX";
+		};
+		DDDF62D322C2273200DC4E28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDDF62C922C2273200DC4E28 /* BluetoothKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C64CDDF31BE4C46A00F72549;
+			remoteInfo = "BluetoothKit tvOS";
+		};
+		DDDF62DA22C2275B00DC4E28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDDF62D522C2275B00DC4E28 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
+		DDDF62DC22C2275B00DC4E28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDDF62D522C2275B00DC4E28 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = "SnapKit Tests";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		DD09517422C221F7003D388A /* winkme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = winkme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD09517722C221F7003D388A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +62,8 @@
 		DD09518022C221F9003D388A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD09518322C221F9003D388A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD09518522C221F9003D388A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDDF62C922C2273200DC4E28 /* BluetoothKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BluetoothKit.xcodeproj; path = ../Vendor/BluetoothKit/BluetoothKit.xcodeproj; sourceTree = "<group>"; };
+		DDDF62D522C2275B00DC4E28 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = ../Vendor/SnapKit/SnapKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +80,7 @@
 		DD09516B22C221F7003D388A = {
 			isa = PBXGroup;
 			children = (
+				DDDF62BB22C2258400DC4E28 /* Frameworks */,
 				DD09517622C221F7003D388A /* winkme */,
 				DD09517522C221F7003D388A /* Products */,
 			);
@@ -56,15 +97,59 @@
 		DD09517622C221F7003D388A /* winkme */ = {
 			isa = PBXGroup;
 			children = (
-				DD09517722C221F7003D388A /* AppDelegate.swift */,
-				DD09517922C221F7003D388A /* FirstViewController.swift */,
-				DD09517B22C221F7003D388A /* SecondViewController.swift */,
+				DDDF62DF22C227A100DC4E28 /* Sources */,
+				DDDF62DE22C2279200DC4E28 /* Resources */,
+			);
+			path = winkme;
+			sourceTree = "<group>";
+		};
+		DDDF62BB22C2258400DC4E28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDDF62D522C2275B00DC4E28 /* SnapKit.xcodeproj */,
+				DDDF62C922C2273200DC4E28 /* BluetoothKit.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDDF62CA22C2273200DC4E28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDDF62D022C2273200DC4E28 /* BluetoothKit.framework */,
+				DDDF62D222C2273200DC4E28 /* BluetoothKit.framework */,
+				DDDF62D422C2273200DC4E28 /* BluetoothKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDDF62D622C2275B00DC4E28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDDF62DB22C2275B00DC4E28 /* SnapKit.framework */,
+				DDDF62DD22C2275B00DC4E28 /* SnapKit Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDDF62DE22C2279200DC4E28 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				DD09517D22C221F7003D388A /* Main.storyboard */,
 				DD09518022C221F9003D388A /* Assets.xcassets */,
 				DD09518222C221F9003D388A /* LaunchScreen.storyboard */,
 				DD09518522C221F9003D388A /* Info.plist */,
 			);
-			path = winkme;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDDF62DF22C227A100DC4E28 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DD09517722C221F7003D388A /* AppDelegate.swift */,
+				DD09517922C221F7003D388A /* FirstViewController.swift */,
+				DD09517B22C221F7003D388A /* SecondViewController.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,12 +198,60 @@
 			mainGroup = DD09516B22C221F7003D388A;
 			productRefGroup = DD09517522C221F7003D388A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DDDF62CA22C2273200DC4E28 /* Products */;
+					ProjectRef = DDDF62C922C2273200DC4E28 /* BluetoothKit.xcodeproj */;
+				},
+				{
+					ProductGroup = DDDF62D622C2275B00DC4E28 /* Products */;
+					ProjectRef = DDDF62D522C2275B00DC4E28 /* SnapKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DD09517322C221F7003D388A /* winkme */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DDDF62D022C2273200DC4E28 /* BluetoothKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BluetoothKit.framework;
+			remoteRef = DDDF62CF22C2273200DC4E28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDDF62D222C2273200DC4E28 /* BluetoothKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BluetoothKit.framework;
+			remoteRef = DDDF62D122C2273200DC4E28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDDF62D422C2273200DC4E28 /* BluetoothKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BluetoothKit.framework;
+			remoteRef = DDDF62D322C2273200DC4E28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDDF62DB22C2275B00DC4E28 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = DDDF62DA22C2275B00DC4E28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDDF62DD22C2275B00DC4E28 /* SnapKit Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit Tests.xctest";
+			remoteRef = DDDF62DC22C2275B00DC4E28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DD09517222C221F7003D388A /* Resources */ = {
