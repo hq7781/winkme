@@ -1,2 +1,2 @@
 # winkme
-dating app for blutooth
+dating app for bluetooth
